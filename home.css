@@ -1,0 +1,76 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(to bottom, #6a0dad, #62007c);
+}
+
+#main {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  text-align: center;
+}
+
+#logo img {
+  height: 250px;
+  width: 250px;
+  margin-bottom: 40px;
+  object-fit: contain;
+  transition: transform 0.3s ease;
+}
+#logo img:hover {
+  transform: scale(1.05);
+}
+
+.text h1 {
+  margin-bottom: 20px;
+  font-size: 3rem;
+  text-shadow: 2px 2px 4px rgba(0,0,0,0.2);
+}
+
+#Weather {
+  color: aliceblue;
+}
+
+#Forecast {
+  color: #ffff66;
+}
+
+#button {
+  margin-top: 30px;
+  height: 55px;
+  width: 240px;
+  border-radius: 12px;
+  background-color: #ffea00;
+  color: #000;
+  border: 2px solid #222;
+  font-weight: bold;
+  font-size: 1.2rem;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+#button:hover {
+  background-color: #fff700;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.35);
+}
+
+#button:active{
+  background-color: #222;
+}
